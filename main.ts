@@ -14,7 +14,7 @@ let mySprite = sprites.create(img`
     f 5 5 5 b d d d d b 5 5 5 f 
     f 5 5 c c d d d d c c 5 5 f 
     f b b f b f d d f b f b b f 
-    f b b d 1 8 d d 8 1 d b b f 
+    f b b d 1 6 d d 6 1 d b b f 
     . f b f d d d d d d f b f . 
     . f e f e d d d d e f e f . 
     . e d f 6 9 9 9 9 6 f d e . 
@@ -64,22 +64,22 @@ let x2 = sprites.create(img`
     . . . f f f f f f f . . . . . . 
     `, SpriteKind.Enemy)
 let x3 = sprites.create(img`
-    . . . . . c c c c c c c . . . . 
-    . . . . c 6 7 7 7 7 7 6 c . . . 
-    . . . c 7 c 6 6 6 6 c 7 6 c . . 
-    . . c 6 7 6 f 6 6 f 6 7 7 c . . 
-    . . c 7 7 7 7 7 7 7 7 7 7 c . . 
-    . . f 7 8 1 f f 1 6 7 7 7 f . . 
-    . . f 6 f 1 f f 1 f 7 7 7 f . . 
-    . . . f f 2 2 2 2 f 7 7 6 f . . 
-    . . c c f 2 2 2 2 7 7 6 f c . . 
-    . c 7 7 7 7 7 7 7 7 c c 7 7 c . 
-    c 7 1 1 1 7 7 7 7 f c 6 7 7 7 c 
-    f 1 1 1 1 1 7 6 f c c 6 6 6 c c 
-    f 1 1 1 1 1 1 6 6 c 6 6 6 c . . 
-    f 6 1 1 1 1 1 6 6 6 6 6 6 c . . 
-    . f 6 1 1 1 1 1 6 6 6 6 c . . . 
-    . . f f c c c c c c c c . . . . 
+    . . f f f . . . . . . . . f f f 
+    . f f c c . . . . . . f c b b c 
+    f f c c . . . . . . f c b b c . 
+    f c f c . . . . . . f b c c c . 
+    f f f c c . c c . f c b b c c . 
+    f f c 3 c c 3 c c f b c b b c . 
+    f f b 3 b c 3 b c f b c c b c . 
+    . c b b b b b b c b b c c c . . 
+    . c 1 b b b 1 b b c c c c . . . 
+    c b b b b b b b b b c c . . . . 
+    c b c b b b c b b b b f . . . . 
+    f b 1 f f f 1 b b b b f c . . . 
+    f b b b b b b b b b b f c c . . 
+    . f b b b b b b b b c f . . . . 
+    . . f b b b b b b c f . . . . . 
+    . . . f f f f f f f . . . . . . 
     `, SpriteKind.Enemy)
 tiles.placeOnRandomTile(x, sprites.dungeon.floorLight2)
 info.setScore(info.score())
